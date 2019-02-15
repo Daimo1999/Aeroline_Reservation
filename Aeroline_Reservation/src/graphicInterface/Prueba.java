@@ -20,6 +20,7 @@ public class Prueba {
         g1.showWelcomeView();
         g1.showFlightTypeView();
         g1.showSizeEconomicView();
+        g1.showSizeExecutiveView();
         g1.PrintDesignAereo();
     }
     

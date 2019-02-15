@@ -92,5 +92,6 @@ public class GraphicInterface {
    }
    public void PrintDesignAereo (){
        JOptionPane.showConfirmDialog(null, this.showSizeEconomicView());
+       JOptionPane.showConfirmDialog(null, this.showSizeExecutiveView());
    }
 }
