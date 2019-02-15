@@ -23,9 +23,26 @@ public class Reservation {
         }else{
             System.out.println("La cantidad de columnas debe estar entre 2 y 4");
         }
-        for (int i = 0; i < ejecutiveClass.length; i++) {
+       
+    }
+    public void addReservation(int decision) {
+        if (decision == 1) {
+            for (int i = 0; i < economicClass.length; i++) {
+                for (int j = 0; j < economicClass.length; j++) {
+                     
+                }
+            }
+        }
+    }
+    public String stringMatrix() {
+        int[] numbArray = new int[40];
+        for (int i = 0; i < numbArray.length; i++) {
+           numbArray[i] = i+1;
+        }
+        String[] code = new String[]{"A ","B ","C ","D ","E ", "F ", "G ", "H ", "I ", "J ", "K ", "L ","M ","N ", "Ñ ", "O ", "P ", "Q ", "R ", "S ", "T ", "U ", "V ", "W ", "X ", "Y ", "Z "};
+         for (int i = 0; i < ejecutiveClass.length; i++) {
             for (int j = 0; j < ejecutiveClass.length; j++) {
-               stringMatrix = ejecutiveClass[i][i] + "";
+               stringMatrix = ejecutiveClass[i][j] + "";
                stringMatrix += " "; 
                
             }
@@ -33,29 +50,17 @@ public class Reservation {
         }
         for (int i = 0; i < economicClass.length; i++) {
             for (int j = 0; j < economicClass.length; j++) {
-               stringMatrix += economicClass[i][i];
+               stringMatrix += economicClass[i][j];
                stringMatrix += " ";
                 
             }
             stringMatrix += "/n";
         }
-
-    }
-    public void addReservation(int decision, int repeat) {
-        if (decision == 1) {
-            for (int i = 0; i < economicClass.length; i++) {
-                for (int j = 0; j < economicClass.length; j++) {
-                    
-                    
-                }
-        }
-            
-        }
-    
+        return stringMatrix;
     }
     
-    public void ModifyReservation() {
-    
+    public void ModifyReservation(Passenger[][] matrixChange) {
+        
     
     }
     public void deleteReservation() {
