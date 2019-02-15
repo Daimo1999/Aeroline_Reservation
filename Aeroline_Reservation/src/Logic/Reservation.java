@@ -5,6 +5,7 @@
  */
 package Logic;
 
+import javax.swing.JOptionPane;
 import models.Passenger;
 
 /**
@@ -21,7 +22,7 @@ public class Reservation {
         if(columns>=2 && columns <=4){
              economicClass = new Passenger[rows][columns*2];
         }else{
-            System.out.println("La cantidad de columnas debe estar entre 2 y 4");
+            JOptionPane.showMessageDialog(null, "la cantidad de filas debe de ser de entre 2 y 4", "Error", JOptionPane.ERROR_MESSAGE);
         }
        
     }
